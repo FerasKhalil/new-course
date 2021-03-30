@@ -1,0 +1,21 @@
+body{
+    background-color:black;
+}
+#first-header{
+    text-align:center;
+    font-family: sans-serif;
+    background-color:#DD4132FF; 
+    color:whitesmoke;
+}
+#navv{
+    border: solid;
+}
+.linkin{
+    text-decoration: none;
+}
+#ullist{
+    color: white;
+}
+#ollist{
+    color: whitesmoke;
+}
