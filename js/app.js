@@ -32,16 +32,20 @@ else {
 }
 }
 firstFun();
-if (thirdQuestion.toLowerCase() == "yes" || thirdQuestion.toLowerCase() == "y") {
-    thirdAnswer = "you were wrong i haven't been always a web-developer";
-    console.log(thirdAnswer);
+function secondFun(){
+    if (thirdQuestion.toLowerCase() == "yes" || thirdQuestion.toLowerCase() == "y") {
+        thirdAnswer = "you were wrong i haven't been always a web-developer";
+        console.log(thirdAnswer);
+    }
+    else {
+        thirdAnswer = "you were right i used to be a barista before getting into web-development";
+        console.log(thirdAnswer);
+        score++;
+    
+    }
 }
-else {
-    thirdAnswer = "you were right i used to be a barista before getting into web-development";
-    console.log(thirdAnswer);
-    score++;
+secondFun();
 
-}
 
 if (fourthQuestion.toLowerCase() == "yes" || fourthQuestion.toLowerCase() == "y") {
     fourthAnswer = "you're right i do wear glasses";
