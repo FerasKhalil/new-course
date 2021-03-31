@@ -19,20 +19,20 @@ let eighthAnswer = "a";
 let score = 0;
 
 
-function firstFun(){
-//console.log("nice meeting you " + userName);
-if (ageQuestion == 22) {
-    ageAnswer = "you were right i am 22";
-    //console.log(ageAnswer);
-    score++;
-}
-else {
-    ageAnswer = " but you were wrong i am 22 years old";
-    //console.log(ageAnswer);
-}
+function firstFun() {
+    //console.log("nice meeting you " + userName);
+    if (ageQuestion == 22) {
+        ageAnswer = "you were right i am 22";
+        //console.log(ageAnswer);
+        score++;
+    }
+    else {
+        ageAnswer = " but you were wrong i am 22 years old";
+        //console.log(ageAnswer);
+    }
 }
 firstFun();
-function secondFun(){
+function secondFun() {
     if (thirdQuestion.toLowerCase() == "yes" || thirdQuestion.toLowerCase() == "y") {
         thirdAnswer = "you were wrong i haven't been always a web-developer";
         //console.log(thirdAnswer);
@@ -41,12 +41,12 @@ function secondFun(){
         thirdAnswer = "you were right i used to be a barista before getting into web-development";
         //console.log(thirdAnswer);
         score++;
-    
+
     }
 }
 secondFun();
 
-function thirdFunc(){
+function thirdFunc() {
     if (fourthQuestion.toLowerCase() == "yes" || fourthQuestion.toLowerCase() == "y") {
         fourthAnswer = "you're right i do wear glasses";
         //console.log(fourthAnswer);
@@ -59,7 +59,7 @@ function thirdFunc(){
 }
 thirdFunc();
 
-function fourthFun(){
+function fourthFun() {
     if (fifthQuestion.toLowerCase() == "yes" || fifthQuestion.toLowerCase() == "y") {
         fifthAnswer = "you're right i love psychology";
         //console.log(fifthAnswer);
@@ -72,7 +72,7 @@ function fourthFun(){
 }
 fourthFun();
 
-function fifthFun(){
+function fifthFun() {
     if (sixthQuestion.toLowerCase() == "yes" || sixthQuestion.toLowerCase() == "y") {
 
         sixthAnswer = "you're right i am a cat person";
@@ -85,7 +85,7 @@ function fifthFun(){
     }
 }
 fifthFun();
-function sixthFun(){
+function sixthFun() {
     if (seventhQuestion.toLowerCase() == "yes" || seventhQuestion.toLowerCase() == "y") {
         seventhAnswer = "true, i listen to music 24/7";
         //console.log(seventhAnswer);
@@ -98,13 +98,13 @@ function sixthFun(){
 }
 sixthFun();
 
-function sevithFun(){
+function sevithFun() {
     eighthQuestion = ["white", "yellow", "green", "blue", "black", "red", "orange", "brown"];
     let j = 1;
     while (eighthAnswer !== "green" && j !== 6) {
         if (eighthAnswer == "green") { score++; }
         eighthAnswer = prompt("of these what do you think my favorite color is? \n" + eighthQuestion);
-    
+
         //console.log("your answer is " + eighthAnswer);
         j++;
     }
@@ -126,23 +126,26 @@ alert("nice meeting you " + userName + "\n"
     + "my favorite color is green " + " your last answer was: " + eighthAnswer + "\n"
     + "your score is: " + score);
 
+function eigthFun() {
+    alert("let's play a game i call the lucky number \n you have 4 chances to guess the number ");
+    let luckyNumber = 0;
+    let counter = 0;
+    for (let i = 1; i <= 4; i++) {
+        luckyNumber = prompt("pick a number 1-10");
+        if (luckyNumber < 9)
+            alert("your guess is too low try something higher");
+        else if (luckyNumber > 9)
+            alert("your guess is too high, try something lower");
+        else if (luckyNumber = 9) {
+            alert("you're right! the lucky number is 9");
+            break;
+        }
+        counter++;
+        alert("guess number: " + counter);
 
-alert("let's play a game i call the lucky number \n you have 4 chances to guess the number ");
-let luckyNumber = 0;
-let counter = 0;
-for (let i = 1; i <= 4; i++) {
-    luckyNumber = prompt("pick a number 1-10");
-    if (luckyNumber < 9)
-        alert("your guess is too low try something higher");
-    else if (luckyNumber > 9)
-        alert("your guess is too high, try something lower");
-    else if (luckyNumber = 9) {
-        alert("you're right! the lucky number is 9");
-        break;
     }
-    counter++;
-    alert("guess number: " + counter);
-
 }
+eigthFun();
+
 
 
