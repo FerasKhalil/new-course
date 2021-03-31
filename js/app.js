@@ -19,7 +19,8 @@ let eighthAnswer = "a";
 let score = 0;
 
 
-console.log("nice meeting you " + userName);
+function firstFun(){
+//console.log("nice meeting you " + userName);
 if (ageQuestion == 22) {
     ageAnswer = "you were right i am 22";
     console.log(ageAnswer);
@@ -29,7 +30,8 @@ else {
     ageAnswer = " but you were wrong i am 22 years old";
     console.log(ageAnswer);
 }
-
+}
+firstFun();
 if (thirdQuestion.toLowerCase() == "yes" || thirdQuestion.toLowerCase() == "y") {
     thirdAnswer = "you were wrong i haven't been always a web-developer";
     console.log(thirdAnswer);
