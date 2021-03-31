@@ -96,22 +96,25 @@ function sixthFun(){
         //console.log(seventhAnswer);
     }
 }
-sixthFun()
+sixthFun();
 
-
-
-eighthQuestion = ["white", "yellow", "green", "blue", "black", "red", "orange", "brown"];
-let j = 1;
-while (eighthAnswer !== "green" && j !== 6) {
-    if (eighthAnswer == "green") { score++; }
-    eighthAnswer = prompt("of these what do you think my favorite color is? \n" + eighthQuestion);
-
-    //console.log("your answer is " + eighthAnswer);
-    j++;
+function sevithFun(){
+    eighthQuestion = ["white", "yellow", "green", "blue", "black", "red", "orange", "brown"];
+    let j = 1;
+    while (eighthAnswer !== "green" && j !== 6) {
+        if (eighthAnswer == "green") { score++; }
+        eighthAnswer = prompt("of these what do you think my favorite color is? \n" + eighthQuestion);
+    
+        //console.log("your answer is " + eighthAnswer);
+        j++;
+    }
+    alert("the right answer is green");
+    //console.log("the right answer is green!");
 }
-alert("the right answer is green");
+sevithFun();
 
-//console.log("the right answer is green!");
+
+
 
 alert("nice meeting you " + userName + "\n"
     + "you think i'm " + ageQuestion + " years old , " + ageAnswer + "\n"
