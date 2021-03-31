@@ -85,16 +85,19 @@ function fifthFun(){
     }
 }
 fifthFun();
+function sixthFun(){
+    if (seventhQuestion.toLowerCase() == "yes" || seventhQuestion.toLowerCase() == "y") {
+        seventhAnswer = "true, i listen to music 24/7";
+        //console.log(seventhAnswer);
+        score++;
+    }
+    else {
+        seventhAnswer = "you are wrong, i do love music!";
+        //console.log(seventhAnswer);
+    }
+}
+sixthFun()
 
-if (seventhQuestion.toLowerCase() == "yes" || seventhQuestion.toLowerCase() == "y") {
-    seventhAnswer = "true, i listen to music 24/7";
-    //console.log(seventhAnswer);
-    score++;
-}
-else {
-    seventhAnswer = "you are wrong, i do love music!";
-    //console.log(seventhAnswer);
-}
 
 
 eighthQuestion = ["white", "yellow", "green", "blue", "black", "red", "orange", "brown"];
