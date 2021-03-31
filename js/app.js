@@ -23,23 +23,23 @@ function firstFun(){
 //console.log("nice meeting you " + userName);
 if (ageQuestion == 22) {
     ageAnswer = "you were right i am 22";
-    console.log(ageAnswer);
+    //console.log(ageAnswer);
     score++;
 }
 else {
     ageAnswer = " but you were wrong i am 22 years old";
-    console.log(ageAnswer);
+    //console.log(ageAnswer);
 }
 }
 firstFun();
 function secondFun(){
     if (thirdQuestion.toLowerCase() == "yes" || thirdQuestion.toLowerCase() == "y") {
         thirdAnswer = "you were wrong i haven't been always a web-developer";
-        console.log(thirdAnswer);
+        //console.log(thirdAnswer);
     }
     else {
         thirdAnswer = "you were right i used to be a barista before getting into web-development";
-        console.log(thirdAnswer);
+        //console.log(thirdAnswer);
         score++;
     
     }
@@ -49,47 +49,48 @@ secondFun();
 function thirdFunc(){
     if (fourthQuestion.toLowerCase() == "yes" || fourthQuestion.toLowerCase() == "y") {
         fourthAnswer = "you're right i do wear glasses";
-        console.log(fourthAnswer);
+        //console.log(fourthAnswer);
         score++;
     }
     else {
         fourthAnswer = "you are wrong i do wear glasses";
-        console.log(fourthAnswer);
+        //console.log(fourthAnswer);
     }
 }
 thirdFunc();
 
-
-
-if (fifthQuestion.toLowerCase() == "yes" || fifthQuestion.toLowerCase() == "y") {
-    fifthAnswer = "you're right i love psychology";
-    console.log(fifthAnswer);
-    score++;
+function fourthFun(){
+    if (fifthQuestion.toLowerCase() == "yes" || fifthQuestion.toLowerCase() == "y") {
+        fifthAnswer = "you're right i love psychology";
+        //console.log(fifthAnswer);
+        score++;
+    }
+    else {
+        fifthAnswer = "you are wrong i love psychology";
+        //console.log(fifthAnswer);
+    }
 }
-else {
-    fifthAnswer = "you are wrong i love psychology";
-    console.log(fifthAnswer);
-}
+fourthFun();
 
 if (sixthQuestion.toLowerCase() == "yes" || sixthQuestion.toLowerCase() == "y") {
 
     sixthAnswer = "you're right i am a cat person";
-    console.log(sixthAnswer);
+    //console.log(sixthAnswer);
     score++;
 }
 else {
     sixthAnswer = "you're wrong i'm a cat person";
-    console.log(sixthAnswer);
+    //console.log(sixthAnswer);
 }
 
 if (seventhQuestion.toLowerCase() == "yes" || seventhQuestion.toLowerCase() == "y") {
     seventhAnswer = "true, i listen to music 24/7";
-    console.log(seventhAnswer);
+    //console.log(seventhAnswer);
     score++;
 }
 else {
     seventhAnswer = "you are wrong, i do love music!";
-    console.log(seventhAnswer);
+    //console.log(seventhAnswer);
 }
 
 
@@ -99,12 +100,12 @@ while (eighthAnswer !== "green" && j !== 6) {
     if (eighthAnswer == "green") { score++; }
     eighthAnswer = prompt("of these what do you think my favorite color is? \n" + eighthQuestion);
 
-    console.log("your answer is " + eighthAnswer);
+    //console.log("your answer is " + eighthAnswer);
     j++;
 }
 alert("the right answer is green");
 
-console.log("the right answer is green!");
+//console.log("the right answer is green!");
 
 alert("nice meeting you " + userName + "\n"
     + "you think i'm " + ageQuestion + " years old , " + ageAnswer + "\n"
