@@ -72,16 +72,19 @@ function fourthFun(){
 }
 fourthFun();
 
-if (sixthQuestion.toLowerCase() == "yes" || sixthQuestion.toLowerCase() == "y") {
+function fifthFun(){
+    if (sixthQuestion.toLowerCase() == "yes" || sixthQuestion.toLowerCase() == "y") {
 
-    sixthAnswer = "you're right i am a cat person";
-    //console.log(sixthAnswer);
-    score++;
+        sixthAnswer = "you're right i am a cat person";
+        //console.log(sixthAnswer);
+        score++;
+    }
+    else {
+        sixthAnswer = "you're wrong i'm a cat person";
+        //console.log(sixthAnswer);
+    }
 }
-else {
-    sixthAnswer = "you're wrong i'm a cat person";
-    //console.log(sixthAnswer);
-}
+fifthFun();
 
 if (seventhQuestion.toLowerCase() == "yes" || seventhQuestion.toLowerCase() == "y") {
     seventhAnswer = "true, i listen to music 24/7";
