@@ -46,16 +46,20 @@ function secondFun(){
 }
 secondFun();
 
+function thirdFunc(){
+    if (fourthQuestion.toLowerCase() == "yes" || fourthQuestion.toLowerCase() == "y") {
+        fourthAnswer = "you're right i do wear glasses";
+        console.log(fourthAnswer);
+        score++;
+    }
+    else {
+        fourthAnswer = "you are wrong i do wear glasses";
+        console.log(fourthAnswer);
+    }
+}
+thirdFunc();
 
-if (fourthQuestion.toLowerCase() == "yes" || fourthQuestion.toLowerCase() == "y") {
-    fourthAnswer = "you're right i do wear glasses";
-    console.log(fourthAnswer);
-    score++;
-}
-else {
-    fourthAnswer = "you are wrong i do wear glasses";
-    console.log(fourthAnswer);
-}
+
 
 if (fifthQuestion.toLowerCase() == "yes" || fifthQuestion.toLowerCase() == "y") {
     fifthAnswer = "you're right i love psychology";
